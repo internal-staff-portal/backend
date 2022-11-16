@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "build": "yarn clean && tsc",
+    "build": "yarn clean && yarn format && tsc",
     "clean": "rimraf dist",
     "format": "prettier -w src",
     "reinstall": "rimraf node_modules yarn.lock && yarn install",
