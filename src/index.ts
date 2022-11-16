@@ -8,5 +8,10 @@ if (env("NODE_ENV") !== "production") {
   loadEnvs();
 
   //log that env vars were loaded
-  logger.log("info", `Loaded environment varibles from file(s) in ${env("NODE_ENV")} environment!`)
+  logger.log(
+    "info",
+    `Loaded environment varibles from file(s) in ${env(
+      "NODE_ENV",
+    )} environment!`,
+  );
 }

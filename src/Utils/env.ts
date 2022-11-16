@@ -1,11 +1,18 @@
 import { logger } from "../Modules/logger";
 
 //shorthand function for loading env vars with optional fallback when var is undefined and process exiting when required var is undefined
-export function env(name: string, required: boolean = false, fallback?: string) {
+export function env(
+  name: string,
+  required: boolean = false,
+  fallback?: string,
+) {
   //check if required var is set
   if (required && process.env[name] === undefined) {
     //log warning that required var is not set
-    logger.log("warn", `Environment variable "${name}" is required and not explicitly set!`);
+    logger.log(
+      "warn",
+      `Environment variable "${name}" is required and not explicitly set!`,
+    );
 
     //check for fallback
     if (fallback === undefined) {
@@ -16,7 +23,7 @@ export function env(name: string, required: boolean = false, fallback?: string) 
       );
 
       //exit process
-      process.exit(1)
+      process.exit(1);
     }
   }
 
