@@ -1,0 +1,1 @@
+NODE_ENV = "development", "production", ... (env vars from file will be loaded in every "NODE_ENV" apart from "production")
