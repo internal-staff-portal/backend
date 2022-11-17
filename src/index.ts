@@ -1,5 +1,5 @@
 import { config as loadEnvs } from "dotenv";
-import { logger } from "./Modules/logger";
+import { logger } from "./Components/logger";
 import { env } from "./Utils/env";
 
 //load env vars
@@ -15,3 +15,6 @@ if (env("NODE_ENV") !== "production") {
     )} environment!`,
   );
 }
+
+//load all modules
+import "./Modules/httpServer"

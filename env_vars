@@ -1,1 +1,3 @@
 NODE_ENV = "development", "production", ... (env vars from file will be loaded in every "NODE_ENV" apart from "production")
+APP_PORT = (port of the express app and the socket instance)
+DEBUG = "1" (when set to "1" debug mode will be enabled else debug mode will be disabled)

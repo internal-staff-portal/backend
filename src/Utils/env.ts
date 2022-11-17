@@ -1,4 +1,4 @@
-import { logger } from "../Modules/logger";
+import { logger } from "../Components/logger";
 
 //shorthand function for loading env vars with optional fallback when var is undefined and process exiting when required var is undefined
 export function env(
