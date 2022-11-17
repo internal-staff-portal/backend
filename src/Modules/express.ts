@@ -5,4 +5,4 @@ import { logger } from "../Components/logger";
 export const app = express();
 
 //log that express app was created
-logger.log("debug", "Express-App created!")
+logger.log("debug", "Express-App created!");

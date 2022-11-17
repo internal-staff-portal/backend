@@ -7,7 +7,7 @@ import { app } from "./express";
 export const httpServer = createServer(app);
 
 //log that httpServer was created
-logger.log("debug", "HTTP-Server created!")
+logger.log("debug", "HTTP-Server created!");
 
 //listen http server on port
 httpServer.listen(env("APP_PORT", true, "3000"));

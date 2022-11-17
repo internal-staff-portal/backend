@@ -6,4 +6,4 @@ import { logger } from "./logger";
 export const io = new Server(httpServer);
 
 //log that io instance was created
-logger.log("debug", "SocketIO-Server created!")
+logger.log("debug", "SocketIO-Server created!");

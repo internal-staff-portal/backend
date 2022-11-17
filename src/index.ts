@@ -17,4 +17,4 @@ if (env("NODE_ENV") !== "production") {
 }
 
 //load all modules
-import "./Modules/httpServer"
+import "./Modules/httpServer";
