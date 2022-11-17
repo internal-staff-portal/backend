@@ -1,7 +1,7 @@
 import { createServer } from "http";
 import { logger } from "../Components/logger";
 import { env } from "../Utils/env";
-import { app } from "./express";
+import { app } from "../Components/express";
 
 //create http server
 export const httpServer = createServer(app);

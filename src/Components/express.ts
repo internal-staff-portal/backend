@@ -1,5 +1,5 @@
 import express from "express";
-import { logger } from "../Components/logger";
+import { logger } from "./logger";
 
 //create new express instance
 export const app = express();
