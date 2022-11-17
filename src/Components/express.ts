@@ -12,7 +12,7 @@ app.use("/api", ApiRouter);
 
 //serve frontend
 app.get("/*", (req, res) => {
-  res.sendFile(join(cwd(), "frontend", "build", "index.html"));
+  res.sendFile(join(cwd(), "frontend", "index.html"));
 });
 
 //log that express app was created
